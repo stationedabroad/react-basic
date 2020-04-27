@@ -34,10 +34,11 @@
 
         class Letter extends React.Component {
             render() {
+                let bgcolor = this.props.bgcolor ? this.props.bgcolor : '#FFDE00';
                 var letterStyle = {
                     padding: 10,
                     margin: 10,
-                    backgroundColor: '#FFDE00',
+                    backgroundColor: bgcolor,
                     color: '#333',
                     display: 'inline-block',
                     fontFamily: 'monospace',
@@ -55,10 +56,10 @@
 
         ReactDOM.render(
             <div>
-                <Letter>A</Letter>
+                <Letter bgcolor='#58B3FF'>A</Letter>
                 <Letter>E</Letter>
                 <Letter>I</Letter>
-                <Letter>O</Letter>
+                <Letter bgcolor='#56FF77'>O</Letter>
                 <Letter>U</Letter>
             </div>,
             destination
